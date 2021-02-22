@@ -87,6 +87,15 @@ public class Home {
 		Assert.assertEquals("Practice Page", title);
 		driver.close();
 	}
+	
+	@Test
+	public void testopenwindow1() {
+		driver.findElement(By.xpath("//*[@id=\'openwindow\']")).click();
+
+		String title = driver.getTitle();
+		Assert.assertEquals("Practice Page", title);
+		driver.close();
+	}
 
 	@Test
 	public void testOpentab() throws InterruptedException {
